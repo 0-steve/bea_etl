@@ -37,7 +37,7 @@ class bea_api():
         linecodes = self.linecode_lookup()
         keys = linecodes[(linecodes.table==table)].drop_duplicates()
         if table == "SAGDP4N":
-            return tuple(k for k in keys.Key.unique() if not re.search("\(", k)) # get keys for industries with a parenthesis
+            return tuple(k for k in keys.Key.unique() if not re.search("\(", k)) # get keys for industries without a parenthesis
         else:
             return tuple(keys.Key)
     
