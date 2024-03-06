@@ -13,6 +13,8 @@ End points and documentation are available in the [user guide](https://apps.bea.
 
 Asyncio allows for asynchronous execution of python code, useful for IO bound tasks. In this example, Asyncio will be combined with Aiohttp to extract data from BEA's API for a hundred endpoints related to employee compensation, personal consumption expenditures, personal income, & disposable income. 
 
+Install [Asyncio](https://pypi.org/project/asyncio/) & [Aiohttp](https://pypi.org/project/aiohttp/) with `pip`
+
 ## Threading
 
 Threading in Python allows for different parts of the code to run concurrently, useful for IO bound tasks. In this example, a pool of threads will be executed with `ThreadPoolExecutor` in order to write JSON files for the cleaned BEA data. With PostgreSQL, JSON files can be loaded in databases for easy querying and analysis.
