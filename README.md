@@ -11,7 +11,7 @@ End points and documentation are available in the [user guide](https://apps.bea.
 
 ## Asyncio
 
-Asyncio allows for asynchronous execution of python code, useful for IO bound tasks. In this example, Asyncio will be combined with Aiohttp to extract data from BEA's API for a hundred endpoints related to employee compensation, personal consumption expenditures, personal income, & disposable income. 
+Asyncio allows for asynchronous execution of python code, useful for IO bound tasks. In this example, Asyncio will be combined with Aiohttp to extract data from BEA's API for a hundred endpoints related to employee compensation, personal consumption expenditures, personal income, disposable income, employment, population, GDP, real GDP, and wages + salaries.
 
 Install [Asyncio](https://pypi.org/project/asyncio/) & [Aiohttp](https://pypi.org/project/aiohttp/) with `pip`
 
