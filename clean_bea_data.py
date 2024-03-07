@@ -49,16 +49,16 @@ class bea_data_clean():
         """
         if "SAGDP4N-1" in bea_data_dict.keys():
             print("Writing BEA compensation data as JSON")
-            bea_data.state_filter(bea_data_dict, "Compensation")
+            bea_data.state_filter(bea_data_dict, "compensation")
         elif "SAPCE2-1" in bea_data_dict.keys():
             print("Writing BEA consumption data as JSON")
-            bea_data.state_filter(bea_data_dict, "Consumption_expenditures")
+            bea_data.state_filter(bea_data_dict, "consumption_expenditures")
         elif "SAINC30-10" in bea_data_dict.keys():
             print("Writing BEA personal income data as JSON")
-            bea_data.state_filter(bea_data_dict, "Personal_income")
+            bea_data.state_filter(bea_data_dict, "personal_income")
         elif "SAINC51-51" in bea_data_dict.keys():
             print("Writing BEA disposable income data as JSON")
-            bea_data.state_filter(bea_data_dict, "Disposable_income")
+            bea_data.state_filter(bea_data_dict, "disposable_income")
         elif "CAINC4-1" in bea_data_dict.keys():
             print("Writing BEA employment data as JSON")
             bea_data.state_filter(bea_data_dict, "employment")
