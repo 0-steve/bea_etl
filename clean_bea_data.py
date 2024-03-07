@@ -59,6 +59,21 @@ class bea_data_clean():
         elif "SAINC51-51" in bea_data_dict.keys():
             print("Writing BEA disposable income data as JSON")
             bea_data.state_filter(bea_data_dict, "Disposable_income")
+        elif "CAINC4-1" in bea_data_dict.keys():
+            print("Writing BEA employment data as JSON")
+            bea_data.state_filter(bea_data_dict, "employment")
+        elif "CAINC30-10" in bea_data_dict.keys():
+            print("Writing BEA wages & salaries data as JSON")
+            bea_data.state_filter(bea_data_dict, "wages_salary")
+        elif "CAINC1-1" in bea_data_dict.keys():
+            print("Writing BEA population data as JSON")
+            bea_data.state_filter(bea_data_dict, "population")
+        elif "CAGDP9-1" in bea_data_dict.keys():
+            print("Writing BEA real GDP data as JSON")
+            bea_data.state_filter(bea_data_dict, "real_gdp")
+        elif "SAGDP2N-1" in bea_data_dict.keys():
+            print("Writing BEA GDP data as JSON")
+            bea_data.state_filter(bea_data_dict, "gdp")
 
     def file_save_threads(self, bea_data):
         """

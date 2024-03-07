@@ -2,6 +2,7 @@ misc/
 __pycache__/
 set_up
 .env
+.DS_STORE
 
 
 # Byte-compiled / optimized / DLL files
