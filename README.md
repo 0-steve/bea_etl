@@ -1,7 +1,9 @@
 # bea_etl
 Extract, transform, and load data using the Bureau of Economic Analysis API
 
-This tool will combine the BEA Api, Asyncio, and threading to create an efficient ETL pipeline in Python.
+This tool will combine the BEA Api, Asyncio, threading, and multiprocessing to create an efficient ETL pipeline in Python.
+
+![Alt text](/img/etl_flow.png?raw=true")
 
 ## BEAAPI
 
