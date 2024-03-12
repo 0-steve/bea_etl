@@ -23,7 +23,7 @@ Threading in Python allows for different parts of the code to run concurrently, 
 
 ## Commands
 
-To get clean data as JSON files, run the command line tool:
+To extract API data as JSON files, run the command line tool:
 
-    python3 clean_bea_data.py
+    python3 extract_data/bea_data_json.py
 
