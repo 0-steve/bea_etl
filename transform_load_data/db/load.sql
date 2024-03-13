@@ -1,0 +1,9 @@
+COPY compensation FROM 'db/compensation.csv' (FORMAT 'csv', quote '"', delimiter ',', header 1);
+COPY population FROM 'db/population.csv' (FORMAT 'csv', quote '"', delimiter ',', header 1);
+COPY wages_salary FROM 'db/wages_salary.csv' (FORMAT 'csv', quote '"', delimiter ',', header 1);
+COPY real_gdp FROM 'db/real_gdp.csv' (FORMAT 'csv', quote '"', delimiter ',', header 1);
+COPY employment FROM 'db/employment.csv' (FORMAT 'csv', quote '"', delimiter ',', header 1);
+COPY disposable_income FROM 'db/disposable_income.csv' (FORMAT 'csv', quote '"', delimiter ',', header 1);
+COPY gdp FROM 'db/gdp.csv' (FORMAT 'csv', quote '"', delimiter ',', header 1);
+COPY consumption_expenditures FROM 'db/consumption_expenditures.csv' (FORMAT 'csv', quote '"', delimiter ',', header 1);
+COPY personal_income FROM 'db/personal_income.csv' (FORMAT 'csv', quote '"', delimiter ',', header 1);
