@@ -51,6 +51,8 @@ class db_load():
             validate_geo_query = self.validate_geo(table_name)
             print(con.sql(validate_geo_query))
             print()
+        
+        con.execute("EXPORT DATABASE 'db'")
 
         con.close()
 
