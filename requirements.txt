@@ -2,4 +2,4 @@ pandas==2.1.0
 aiohttp==3.9.3
 asyncio==3.4.3
 re==2.2.1
-
+dask==2023.8.1
