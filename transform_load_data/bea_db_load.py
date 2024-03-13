@@ -52,8 +52,6 @@ class db_load():
             print(con.sql(validate_geo_query))
             print()
 
-        con.execute("EXPORT DATABASE 'db';")
-
         con.close()
 
 if __name__ == "__main__":
