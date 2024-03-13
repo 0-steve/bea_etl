@@ -27,13 +27,13 @@ Threading in Python allows for different parts of the code to run concurrently, 
 
 ### Multiprocessing
 
-Similar to threading, multiprocessing allows for concurrent runs of your code and is useful for CPU intensive tasks. In this example, 4 pools are used to process, transform, and join JSON data. This ultimatley preps the data to be ready to be loaded into a database.
+Similar to threading, multiprocessing allows for concurrent runs of code and is useful for CPU intensive tasks. In this example, 4 pools are used to process, transform, and join JSON data. This ultimatley preps the data to be ready to be loaded into a database.
 
 ## Load tools
 
 ### DuckDB
 
-DuckDB is a serverless database tool that can handle data in many formats. It looks you to create, alter, and query data quickly & efficiently. BEA tables are created from the original API call in the extract step, and further analysis can be run with PostgreSQL.
+DuckDB is a serverless database tool that can handle data in many formats. It allows for tables to be created, altered, and queried quickly & efficiently. BEA tables are created from the after extracing data from the API & completing transformations. Validation steps are included to ensure schema is correct. Further analysis can be run with PostgreSQL.
 
 ## Commands
 
