@@ -1,5 +1,6 @@
 import bea_data_prep as prep
 import duckdb as db
+import bea_views as beav
 
 class db_load():
     def __init__(self):
@@ -51,6 +52,10 @@ class db_load():
             validate_geo_query = self.validate_geo(table_name)
             print(con.sql(validate_geo_query))
             print()
+
+        # create views needed for analysis
+        bea_db = beav.bea_views(con)
+        bea_db.views_exist()
         
         con.execute("EXPORT DATABASE 'db'")
 
